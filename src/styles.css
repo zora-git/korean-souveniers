@@ -99,8 +99,36 @@ main p {
   opacity: 0.7;
 }
 
+section.secondary-section {
+  background: rgb(230, 230, 230);
+  text-align: center;
+}
+
 .grid-3-columns {
   grid-template-columns: 1fr 2fr 2fr;
+}
+
+.grid-with-cards {
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 50px;
+}
+
+.card {
+  background-color: white;
+  width: 250px;
+}
+
+.btn {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: #381641;
 }
 
 footer {
