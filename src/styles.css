@@ -3,21 +3,10 @@ body {
   background: white;
 }
 
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
 section {
   max-width: 1200px;
   margin: 0 auto;
   padding: 100px;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
-  grid-gap: 60px;
 }
 
 header {
@@ -69,6 +58,19 @@ header a {
   background: rgb(196, 183, 197);
 }
 
+.grid {
+  display: grid;
+  grid-gap: 60px;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.korean-sky {
+  max-width: 500px;
+}
+
 main h2 {
   font-weight: 700;
   font-size: 16px;
@@ -77,6 +79,7 @@ main h2 {
   color: #272044;
   opacity: 0.3;
   text-align: uppercase;
+  margin: 0;
 }
 
 main h3 {
@@ -84,6 +87,7 @@ main h3 {
   font-size: 40px;
   line-height: 1.5;
   color: #272044;
+  margin: 0;
 }
 
 main p {
@@ -95,22 +99,8 @@ main p {
   opacity: 0.7;
 }
 
-@media (max-width: 900px) {
-  header {
-    padding: 60px 0;
-  }
-
-  header h1 {
-    font-size: 48px;
-  }
-
-  header h2 {
-    font-size: 20px;
-  }
-
-  header h3 {
-    font-size: 70px;
-  }
+.grid-3-columns {
+  grid-template-columns: 1fr 2fr 2fr;
 }
 
 footer {
@@ -143,4 +133,35 @@ footer li {
 footer a {
   color: white;
   opacity: 0.7;
+}
+
+@media (max-width: 960px) {
+  header {
+    padding: 60px 0;
+  }
+
+  header h1 {
+    font-size: 48px;
+  }
+
+  header h2 {
+    font-size: 20px;
+  }
+
+  header h3 {
+    font-size: 70px;
+  }
+
+  section {
+    padding: 20px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  .korean-sky {
+    width: 100%;
+    max-width: 350px;
+  }
 }
