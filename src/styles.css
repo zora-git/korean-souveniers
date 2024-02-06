@@ -55,7 +55,7 @@ header a {
   letter-spacing: 3px;
   text-decoration: none;
   text-transform: uppercase;
-  background: rgb(196, 183, 197);
+  background: rgb(223, 208, 224);
 }
 
 .grid {
@@ -99,8 +99,15 @@ main p {
   opacity: 0.7;
 }
 
-section.secondary-section {
+.full-background-section {
   background: rgb(230, 230, 230);
+}
+
+.secondary-section {
+  text-align: center;
+}
+
+section.tertiary-section {
   text-align: center;
 }
 
@@ -115,7 +122,20 @@ section.secondary-section {
 
 .card {
   background-color: white;
-  width: 250px;
+  width: 300px;
+}
+
+.card-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card-body {
+  padding: 20px;
+}
+.souvenir-explanation {
+  text-align: left;
+  font-size: 15px;
 }
 
 .btn {
@@ -129,6 +149,11 @@ section.secondary-section {
   text-transform: uppercase;
   padding: 16px;
   background-color: #381641;
+}
+
+.souvenir-grid {
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 50px;
 }
 
 footer {
