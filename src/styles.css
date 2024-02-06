@@ -1,6 +1,7 @@
 body {
   font-family: "Poppins", sans-serif;
   background: white;
+  margin: 0;
 }
 
 section {
@@ -60,11 +61,16 @@ header a {
 
 .grid {
   display: grid;
-  grid-gap: 60px;
+  grid-gap: 20px;
 }
 
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
+}
+
+.intro-image {
+  display: block;
+  margin: 0 auto;
 }
 
 .korean-sky {
@@ -123,6 +129,7 @@ section.tertiary-section {
 .card {
   background-color: white;
   width: 300px;
+  margin: 0 auto;
 }
 
 .card-header {
@@ -156,10 +163,20 @@ section.tertiary-section {
   margin-top: 50px;
 }
 
+.souvenir-grid img {
+  width: 400px;
+  transition: all 200ms ease;
+}
+
+.souvenir-grid img:hover {
+  transform: scale(1.1);
+}
+
 footer {
   color: white;
   background-color: #381641;
   background-size: cover;
+  padding: 50px;
 }
 
 footer h5 {
@@ -188,6 +205,10 @@ footer a {
   opacity: 0.7;
 }
 
+footer li a {
+  text-decoration: none;
+}
+
 @media (max-width: 960px) {
   header {
     padding: 60px 0;
@@ -210,11 +231,15 @@ footer a {
   }
   .grid {
     grid-template-columns: 1fr;
-    grid-gap: 32px;
   }
 
   .korean-sky {
     width: 100%;
     max-width: 350px;
+  }
+
+  .souvenir-grid img {
+    width: 100%;
+    max-width: 300px;
   }
 }
